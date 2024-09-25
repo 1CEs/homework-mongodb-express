@@ -6,7 +6,7 @@ const bookController = {
             const latestBook = await bookService.getLatestService()
             const { title, author } = req.body
             const payload = {
-                id: latestBook.id ? latestBook.id + 1 : 1,
+                id: latestBook && latestBook.id ? latestBook.id + 1 : 1,
                 title,
                 author
             }

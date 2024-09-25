@@ -1,5 +1,5 @@
 {
-  "name": "my-project",
+  "name": "server",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -17,7 +17,8 @@
     "express": "^4.21.0",
     "express-joi-validation": "^5.0.1",
     "joi": "^17.13.3",
-    "mongoose": "^8.6.2"
+    "mongoose": "^8.6.2",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
