@@ -1,0 +1,161 @@
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.empty-cell {
+    padding: 20px;
+    background-color: #191919;
+}
+
+.search-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: var(--text-light);
+    gap: 5px;
+}
+
+.search-input {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.status-search-wrapper {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-status {
+    padding: 5px;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#status {
+    color: var(--primary);
+}
+
+.main__form {
+    width: 30%;
+    padding: 20px;
+    min-width: 30%;
+}
+.main__table {
+    width: 70%;
+    padding: 20px;
+}
+
+/* Form */
+
+.main__form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.submit-wrapper > button {
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--text-light);
+    border: none;
+    transition: .3s;
+    font-weight: bold;
+}
+
+.submit-wrapper > button:hover {
+    background-color: var(--primary-hover);
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.input-wrapper > label {
+    color: var(--text-light);
+}
+
+/* Table */
+
+table {
+    width: 100%;
+    color: var(--text-light);
+}
+
+.table-header {
+    padding-right: 10px;
+}
+
+.table-header > th:first-child {
+    width: 10%;
+}
+
+.table-header > th {
+    padding: 10px;
+    background-color: var(--primary);
+    width: 20%;
+    text-align: start;
+}
+
+.table-header > th:first-child {
+    width: 5%;
+}
+
+.odd-row {
+    background-color: #191919;
+}
+
+.action-cell {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action-cell > span {
+    transition: .3s;
+}
+
+.action-cell > span:first-child {
+    color: #d8d24d;
+}
+
+.action-cell > span:first-child:hover {
+    color: #b2ac40;
+}
+
+.action-cell > span:nth-child(2) {
+    color: rgb(255, 63, 63);
+}
+
+.action-cell > span:nth-child(2):hover {
+    color: rgb(206, 46, 46);
+}
+
+.update-button {
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    width: 30%;
+    transition: .3s;
+}
+
+.update-button:hover {
+    background-color: var(--primary);
+    color: var(--text-light);
+}
+
+.update-input {
+    background-color: var(--background);
+    color: var(--text-light);
+    border: 1px solid #a5a5a5;
+}

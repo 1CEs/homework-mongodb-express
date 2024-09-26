@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code';
+}
+
+:root {
+    --primary: rgb(40, 131, 40);
+    --primary-hover: rgb(26, 85, 26);
+    --secondary: red;
+    --text-light: #eee;
+    --text-dark: #121212;
+    --background: #0d0d0d;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    padding: 8px;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+td {
+    padding: 10px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users CRUD</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/icon.css" />
+    <!-- JS -->
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/user.controller.js"></script>
+  </head>
+  <body>
+    <header>
+      <h2>Users CRUD</h2>
+    </header>
+    <main>
+      <div class="main__form">
+        <div>
+          <div class="input-wrapper">
+            <label for="">Name</label>
+            <input
+              id="form-name"
+              name="name"
+              type="text"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+          <div class="input-wrapper">
+            <label for="">Birth (Optional)</label>
+            <input id="form-birth" name="birth" type="date" />
+          </div>
+          <div class="submit-wrapper">
+            <button type="submit" id="form-submit">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="main__table">
+        <div class="status-search-wrapper">
+          <div class="action-status">
+            <h6>Status:</h6>
+            <div id="status"></div>
+          </div>
+          <div class="search-wrapper">
+            <h6>Search:</h6>
+            <input class="search-input" type="text" id="search" placeholder="Search by name">
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr class="table-header">
+              <th>ID</th>
+              <th>Name</th>
+              <th>Birth</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+          <tfoot id="table-footer"><tr><th colspan="4" class="empty-cell">Empty</th></tr></tfoot>
+        </table>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

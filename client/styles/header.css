@@ -1,0 +1,9 @@
+header {
+    width: 100%;
+    height: fit-content;
+    color: var(--primary);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--primary);
+} 
